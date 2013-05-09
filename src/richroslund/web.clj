@@ -4,7 +4,7 @@
   (:require [compojure.route :as route]))
 
 (defroutes app
-           (GET "/" [] "<h1>Hello World</h1>")
+           (GET "/" [] "<html><h1>Hello World</h1><br><a href="http://amaliz.herokuapp.com">Check out Amaliz!</a></html>")
            (route/not-found "<h1>Page not found</h1>"))
 
 (defn -main []
